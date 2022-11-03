@@ -1,0 +1,65 @@
+#header{
+    background-color: black;
+    color:white;
+    padding: 10px 20px; /*espaciado: arriba-abajo laterales*/
+}
+
+#header h1{
+    margin: 0px; /*márgenes*/
+}
+
+body{
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#header ul{
+    list-style: none; /*para quitar los puntos de la lista*/
+    padding: 0px;
+    overflow: hidden; /*para que no se vea mal al hacer float left abajo*/
+}
+
+#header li{
+    float: left; /*para que aparezcan los elementos unos al lado de otros de la lista*/
+    margin: 0 23px 0 0; /*margin: arriba drch abajo izq*/
+}
+
+#content{
+    padding: 20px;
+}
+
+#header ul a{
+    color: white;
+    text-decoration: none; /*para quitar la decoracion de los links como el subrayado*/
+}
+
+#header ul a:hover{ /*cuando el raton esté encima del objeto cambia el color*/
+    color: #b0afaf;
+}
+
+
+
+/* Modificaciones de la página CSS */
+
+/* Identificadores, solo se pueden usar en un objeto */
+#rojo{
+    color: red;
+}
+
+/* Clases, pueden usarse en múltiples objetos*/
+.colorPistacho{
+    color: #53c309;
+}
+
+/* Elementos, cambios globales*/
+h3 { /*h1, h2 {} para afectar a mas elementos*/
+    color:#7300ff; /* si pones el cursor sobre el color lo puedes cambiar*/
+}
+
+#fondo{
+    background: rgb(0, 179, 255);
+}
+
+#ejemplo:hover{ /*cuando el raton esté encima del objeto cambia el color*/
+    color: #b0afaf;
+}
