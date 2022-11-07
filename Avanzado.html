@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Avanzado </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="header">
+            <h1> Bienvenido </h1>
+            <ul>
+                <li><a href="./index.html"> Inicio </a></li>
+                <li><a href="./CSS.html"> CSS </a> </li>
+                <li><a href="./Avanzado.html"> Avanzado </a> </li>
+            </ul>
+        </div>
+        <div id="content">
+            <h2> HTML Avanzado </h2>
+            <p> Aquí vamos a aprender más cosas que se pueden hacer en HTML </p>
+            <p> Para hacer un formulario usamos &ltform&gt y dentro podemos poner una etiqueta
+                para nombrar a nuestro cuadro donde escribiremos usamos &ltlabel&gt dentro del formulario
+                y seguidamente ponemos &ltinput type="tipo" name="nombre"&gt para generar el cuadro. </p>
+                <p>También podemos añadir los atributos "id" y "name" al input para así identificarlos más fácilmente
+                    a posteriori y, si añadimos el atributo "for" a label con el mismo id del input, los asociamos y, 
+                    de esta forma, si hacemos click en el nombre que le dimos a label, nos marca su cuadro.
+                </p>
+            
+            <form>
+                <label for="Correo1">Correo </label>
+                <input type="email" id="Correo1" name="Correo1"/>
+
+                <label for="Contrasena1">Contraseña </label>
+                <input type="password" id="Contrasena1" name="Contrasena1"/>
+            </form>
+
+            <p> Con &lttextarea&gt podemos hacer un cuadro en el que el usuario pueda escribir y modificar su tamaño.
+                También añadiremos el botón con el que enviaremos los datos con &ltinput type="submit" value="Enviar"/&gt</p>
+            <label for="Comentarios1">Comentarios </label>
+            <textarea name="Comentarios1" id="Comentarios1"></textarea>
+            <input type="submit" value="Enviar">
+            
+                <p> Ahora vamos a ver cómo quedaría bien estilizado, para ello pondremos en CSS: </p>
+
+                <pre><code>#formEditado input, #formEditado textarea{
+    display: block; /*para que no aparezca en línea sino en bloque */
+    clear: both; /* Para que no haya nada a la izq ni drch*/
+    margin-bottom: 10px;
+    padding: 5px; /* para dejar margenes donde escribimos */
+    width: 25%;
+    border: 0; /* para quitar los bordes*/
+    background-color: #EFEFEF;
+    color: #565555;
+}</code></pre>
+            
+            <form id="formEditado">
+                <label for="Correo">Correo </label>
+                <input type="email" id="Correo" name="Correo"/>
+
+                <label for="Contrasena">Contraseña </label>
+                <input type="password" id="Contrasena" name="Contrasena"/>
+
+                <label for="Comentarios">Comentarios </label>
+                <textarea name="Comentarios" id="Comentarios"></textarea>
+            </form>
+            <input type="submit" value="Enviar">
+            <div id="parte2">
+                <p><br/><br/>Para hacer una tabla usamos "&lttable&gt", dentro usaremos &lttr&gt (fila) y dentro &lttd&gt (columna).<br/>
+                    td es para datos, th para encabezados. <br/>
+                    En CSS pondremos "#tabla1{border: 1px solid #CCC;}" para poder verla.</p>
+
+                <table id="tabla1">
+                    <tr>
+                        <th> Nombre </th>
+                        <th> Precio </th>
+                        <th> Web </th>
+                    </tr>
+                    <tr>
+                        <td>Conservas</td>
+                        <td>2€</td>
+                        <td>Amazon</td>
+                    </tr>
+                    <tr>
+                        <td>Zumo</td>
+                        <td>1€</td>
+                        <td>Dia</td>
+                    </tr>
+                    <tr>
+                        <td>Portatil</td>
+                        <td>888€</td>
+                        <td>Pccomponentes</td>
+                    </tr>
+                </table>
+
+                <p>Y, añadiendo "cellspacing="0"" de atributo a table y esto a CSS le daremos formato </p>
+                <pre><code>#tabla2 tr>*{ /* cualquier elemento que este inmediatamente despues de tr*/
+    border: 1px solid #CCC;
+    padding: 3px 10px;
+    border-bottom: 1px solid #666;
+}
+
+#tabla2 tr:nth-child(even){ /* Para colorear solo los impares*/
+    background-color: #EFEFEF;
+}</code></pre>
+
+                <table id="tabla2" cellspacing="0">
+                    <tr>
+                        <th> Nombre </th>
+                        <th> Precio </th>
+                        <th> Web </th>
+                    </tr>
+                    <tr>
+                        <td>Conservas</td>
+                        <td>2€</td>
+                        <td>Amazon</td>
+                    </tr>
+                    <tr>
+                        <td>Zumo</td>
+                        <td>1€</td>
+                        <td>Dia</td>
+                    </tr>
+                    <tr>
+                        <td>Portatil</td>
+                        <td>888€</td>
+                        <td>Pccomponentes</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

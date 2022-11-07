@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title> Inicio </title>
+        <title> CSS </title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
@@ -11,31 +11,35 @@
             <ul>
                 <li><a href="./index.html"> Inicio </a></li>
                 <li><a href="./CSS.html"> CSS </a> </li>
-                <li> algo2 </li>
+                <li><a href="./Avanzado.html"> Avanzado </a> </li>
             </ul>
         </div>
         <div id="content">
             <h2> CSS </h2>
-            <p> Aquí vamos a aprender a dar color y a modificar el texto a nuestro gusto. </p>
-            <p>Lo primero que hemos de hacer es crear un archivo styles.css el cual nos 
-                permitirá tener en un mismo sitio todos los cambios estéticos de nuestra web. 
-                Con la línea que añadimos al empezar, 
-                <pre><code>&ltlink rel="stylesheet" href="styles.css"&gt</code></pre>
-            añadimos a nuestra web el documento que cambiará nuestro texto.</p>
+            <p> Aquí vamos a aprender a dar color y a modificar el texto a nuestro gusto. <br/>
+                Lo primero que hemos de hacer es crear un archivo styles.css el cual nos 
+                permitirá tener en un mismo sitio todos los cambios estéticos de nuestra web. <br/>
+                Con la línea que añadimos al empezar, "&ltlink rel="stylesheet" href="styles.css"&gt",
+                añadimos a nuestra web el documento que cambiará nuestro texto. </p>
             <p>HTML se usa identificadores, clases y elementos para referirse a las 
                 distintas partes del código. Tienen un orden de prioridad, aquí están del
                 más alto al más bajo:
                 <ul>
-                    <li/> 1.- Identificadores:
-                        <p>Para nombrar exclusivamente a algo, por ejemplo &ltp id="ID-de-prueba"&gt
-                            (#ID-de-prueba{color: #0eb482;} en CSS para modificarlo) </p>
-                    <li/> 2.- Clases:
-                        <p>Las clases se pueden asignar a varios elementos así:&ltp class="nombreClase"&gt
-                            (.nombreClase en CSS) </p>
-                    <li/> 3.- Elementos (p, h1...)
-                        <p>Al modificar un elemento en CSS se modifica para todos los demás</p>
+                    <li/> 1.- Identificadores:<br/>
+                        &nbsp&nbsp&nbsp&nbsp&nbspPara nombrar exclusivamente a algo, por ejemplo &ltp id="ID-de-prueba"&gt
+                            (#ID-de-prueba{color: #0eb482;} en CSS para modificarlo)
+                    <li/> 2.- Clases:<br/>
+                    &nbsp&nbsp&nbsp&nbsp&nbspLas clases se pueden asignar a varios elementos así:&ltp class="nombreClase"&gt
+                            (.nombreClase en CSS)
+                    <li/> 3.- Elementos (p, h1...)<br/>
+                    &nbsp&nbsp&nbsp&nbsp&nbspAl modificar un elemento en CSS se modifica para todos los demás.
                 </ul>
             </p>
+            <p> Podemos aplicar un mismo cambio a varios elementos así: "h1, h2 {}". <br/>
+                Podemos especificar elementos dentro de otros elementos así: "#header ul a{}". <br/>
+                También podemos especificar atributos dentro de elementos así: "#content ul [atrib = x]". <br/>
+                Por último, podemos especificar todos los elementos que estén inmediatamente dentro (el primero de dentro) de algo así: 
+                #content ul>*{}</p>
             <p>Ahora vamos a ver algunas modificaciones:</p>
             <p id="rojo"> Hemos puesto que este párrafo tenga id="rojo", así en CSS usamos: #rojo{color: #red;}
                 para cambiar el color de este párrafo </p>
@@ -59,7 +63,7 @@
                     si son 4 elementos, arriba, drch, abajo, izq*/
                 <li id="ejemplo"/> También podemos poner que cambie el formato solo si pasamos el cursor por encima, así: #ejemplo:hover{color: #b0afaf;} 
             </ul>
-
+            <br/><br/><br/><br/><br/>
         </div>
     </body>
 </html>
